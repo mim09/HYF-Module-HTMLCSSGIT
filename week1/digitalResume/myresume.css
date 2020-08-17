@@ -1,0 +1,94 @@
+body{
+    font-size: 22px;
+    background-color: #006834;
+}
+.flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: initial; 
+    border-bottom: 6px solid #006834;
+    padding:3px;
+    clear: both;
+}
+.flexbox-item{
+ width: 100%;
+ background-color: rgb(219, 219, 219);
+}
+img{
+    width:100px;
+    flex-basis: 150px;
+    padding-top: 10px;
+}
+h1{
+    flex-basis:70%;
+    text-align: center;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.personal h2 {
+    flex-basis: 100%;
+}
+.personal ul {    
+    flex-basis: 45%;
+    min-width: 200px;
+}
+.personal ul, .languages ul, .ref {
+    list-style-type: none;
+}
+.education h2 {
+    flex-basis: 100%;
+}
+.education p{
+    flex-basis: 45%;
+    min-width: 200px;
+}
+.exp1, .exp2{
+    flex-basis: 45%;
+    min-width: 200px;
+}
+.font-bold{
+    font-weight: 600;
+    font-style: italic;
+    }
+li{
+    padding:2% 0;
+}
+.lang-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 100%;
+}
+.lang-list{
+    font-weight: bolder;
+}
+h2 {
+    flex-basis: 100%;
+}
+.skills ul{    
+    list-style-position: inside;
+    flex-basis: 45%;
+    min-width: 200px;
+}
+.skills ul li{
+    padding: 1% 0;
+}
+.ref li{
+    padding:0;
+}
+
+    
