@@ -1,0 +1,185 @@
+/*setting margin  and padding to 0*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{   
+    font-size:20px;
+}
+/* styling the heading and subtitle */
+header h1{
+    margin:0;
+    /* padding:3em 8em 3em 12em; */
+    padding:10% 30% 20%;
+    color:#fff;
+    overflow:hidden;
+    position:relative;
+    font-weight: 900;
+    font-size:4em;
+}
+/* header */
+header h1::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    transform: skewY(-10deg);
+    background:#854c52;
+    transform-origin: bottom left;
+    z-index:-1;
+}
+section h2{
+    padding:10px;
+    padding-left:40px; 
+    line-height:2em;
+    font-size: 2em;
+    color:#5e363a;
+    text-align:left;
+    border-radius: 10px;
+    text-shadow: 4px 4px 5px #030113;
+}
+/* floating the image around text inside the grid */
+#grid-floats .grid-item {
+    clear: both;
+    padding: 2em 10px 3em 10px;
+    background-color:#854c52;
+    border-radius: 40px;
+    box-shadow: 5px 10px black;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+}
+#grid-floats .grid-item h3{
+     width: 100%
+}
+/* #grid-floats */
+ .grid-item p {
+    font-family: monospace;
+    padding:0 15px;
+    line-height: 1.2em; 
+    font-style: oblique;
+}  
+#grid-floats .grid-item img {
+    float: left;    
+    width: 50%;
+    margin:0px 10px 20px 15px;
+  } 
+  /* * end floating the image around text inside the grid */ 
+  /* mobile first */
+#grid-floats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 40px;
+    place-content:start space-evenly;    
+}
+#grid-floats li:nth-child(1){
+    grid-column: 1/ span 2;
+}
+/* remove list style  */
+ul{
+     list-style-type: none;
+}
+.grid-item h3{
+    color:white;
+    text-align: center;
+    font-size:1.5em;
+    font-weight: 900;
+    padding-bottom: 15px;
+    text-shadow: 4px 10px 8px black;
+}
+.grid-item h3:hover{
+    color:black;
+    text-shadow: 4px 10px 8px #fff;    
+}
+/* Zoom out the image when the mouse hovers */
+#grid-floats .grid-item img:hover {
+    -webkit-transform: scale(1.5); 
+    -ms-transform: scale(1.5);
+   transition: transform .5s ease;
+   transform-origin: top left;
+}
+/* styling the grid using flex */
+#grid-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 90%;
+    justify-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+#grid-flex img{
+    max-width:100%;
+}
+#grid-flex p{
+    padding-bottom: 10px;
+    overflow-wrap: break-word;
+}
+#grid-flex li:first-child {
+    background-color:#854c52;
+    border-radius: 40px;
+    box-shadow: 5px 10px black;
+    width: 100%;
+}
+#grid-flex .grid-item{
+    background-color:#854c52;
+    border-radius: 40px;
+    box-shadow: 5px 10px black; 
+    width:38%; 
+    margin: 20px;
+}
+  
+#grid-flex .grid-item h3{
+    padding:20px;
+    flex:1 1 50%;
+}
+/* flex mobile */
+/* responsive design for tablets */
+@media (min-width:600px) { 
+    #grid-floats{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #grid-floats li:nth-child(1){
+        grid-column: 1/ span 2;
+    }     
+    /* tablet view grid flex */
+    #grid-flex .grid-item{
+        width:25%; 
+        margin: 20px;
+      }
+      #grid-flex li:first-child {
+        width: 40%;
+      }
+     
+}
+/* responsive design for desktops */
+@media (min-width:1024px){
+    #grid-floats{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        column-gap:30px;
+        row-gap: 50px;
+    }
+    #grid-floats .grid-item:nth-of-type(1){
+        min-width:50%;
+    }
+    #grid-floats h3{
+        font-size:1.6em;
+    } 
+     /* desktop view grid flex */
+     #grid-flex .grid-item{
+        width:20%; 
+        margin: 20px;
+      }
+      #grid-flex li:first-child {
+        width: 40%;
+      }     
+        
+}
