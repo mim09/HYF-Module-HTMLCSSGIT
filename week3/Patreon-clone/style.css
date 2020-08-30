@@ -1,0 +1,258 @@
+html {
+    font-family: sans-serif;
+    text-size-adjust: 100%;
+}
+body{
+font-size:16px !important;
+margin:0;
+}
+.logo{
+    float:left;
+    margin-top:5px;
+}
+.nav-wrapper .btn-small{
+  border-radius: 40px;
+  max-width: 100%;
+}
+.nav-wrapper .left.hide-on-med-and-down{
+    width:600px;
+}
+a.btn-small.orange.darken-4.white-text.center-text{
+    position: fixed;
+    margin-top: 15px;
+    right:6%;
+    font-size:12px !important;
+}
+.dropdown-content {
+    top: 100% !important;
+  }
+.back-im{
+    background-image: url('https://c5.patreon.com/external/marketing/index_page/creativity_over_everything_d.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:500px;
+    width:100%;
+}
+.cont-row{
+    margin: 80px auto !important; 
+}
+
+.tit{
+    color: rgb(255, 255, 255);
+    font-family: Walsheim, sans-serif;
+    margin: 0px;
+    position: relative;
+    transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    text-align: left;
+    font-weight: 700 !important;
+    font-size: 2.625rem !important;
+    line-height: 1.25 !important;
+
+}
+.title-section1{
+    line-height: 1.25 !important;
+    font-size: 3.5rem !important;
+ font-family: Walsheim, sans-serif;
+}
+.parag{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400 !important;
+    margin: 0.5rem 0rem !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}
+.parag2 strong{
+    font-weight: 700 !important;
+}
+.btn-pateron{
+    margin-top: 10px;
+    border-radius:40px;
+    text-transform: none;
+    width:12rem;
+    height: 48px;
+    padding-top: 7px;
+}
+col .s2 a{
+    margin-left:20px;
+}
+.photo-desc{
+    font-size: 2.125rem !important;
+    font-family: Walsheim, sans-serif;
+    font-weight: 700 !important;
+}
+.container.section-card {
+    margin: 8% 10%;
+}
+.card.horizontal.valign-wrapper, .section-card .card {
+    box-shadow: none;
+}
+.card-image.col.s4{
+    margin-left: 20%;
+}
+.card-textimg, .contactus-title{
+line-height: 1.25 !important;
+font-size: 2.125rem !important;
+font-family: Walsheim, sans-serif;
+padding:0 0 0 15% !important;
+font-weight: 700 !important;
+}
+.card-txtsmall{
+text-align: center;
+font-weight: 700 !important;
+font-size: 1.625rem !important;
+line-height: 1.25 !important;
+}
+.name-pic{
+    font-family: aktiv-grotesk, sans-serif;
+    margin: 0px;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}
+.tit-pic{
+    font-family: aktiv-grotesk, sans-serif;
+    margin: 0px;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}
+.title-section2, .card-title{
+    font-family: Walsheim, sans-serif;
+    margin-top: 0;
+    font-weight: 700 !important;
+    font-size: 1.3125rem !important;
+    line-height: 1.25 !important;
+}
+.text-section2, .text-section4{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}
+.section-third, .section-fifth {
+   margin-top:5%;
+   margin-bottom:5%;
+}
+/* .section-forth */
+.btn-card{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+.btn-image{
+    display:none;
+    border-radius: 50px;
+   /* margin-top: -180%; */
+    /* opacity: 0; */
+}
+.section-third .card:hover .btn{
+    display: inline-block;
+    /* filter: opacity(0.7);*/
+}
+@media (max-width: 1000px){
+.firstrow::after {
+    content: initial;
+}
+}
+
+.contact-cont{
+    padding:5rem !important;
+}
+.contactus-title {
+    padding: 0 !important;
+}
+p.text-section4, .section-fifth p{
+    text-align: center;
+    justify-content: center;
+}
+.btn-contact{
+    margin-top: 20px;
+    border-radius:40px;
+    text-transform: none;
+    width:10rem;
+    height: 48px;
+    padding-top: 7px;
+}
+.fifthcol-title{
+margin-top: 0;
+margin-bottom: 0;
+font-weight: 700 !important;
+font-size: 1.625rem !important;
+line-height: 1.25 !important;
+}
+
+.section-fifth ul li{
+    margin-top:1rem;
+}
+.secfifthcol{
+    margin-left:0;
+}
+.section-fifth .row{
+    margin-top: 5%;
+}
+.section-fifth .col.s12.m6.l4{
+   text-justify: auto;
+   text-overflow: hide;
+   margin-top:1.5rem;
+}
+.section5tit{
+        font-family: Walsheim, sans-serif;
+        margin: 0px;
+        font-weight: 700 !important;
+        font-size: 2.625rem !important;
+        line-height: 1.25 !important;
+}
+.section-fifth p{
+    padding:0 15%;
+}
+.text-section6{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    padding:0 15%;
+    text-align: center;
+}
+.section7 .card-title{
+    padding-top:20px;
+}
+.section7 .red-text{
+    text-decoration:underline ;
+}
+.section7 .card{
+   box-shadow: none !important;
+   
+}
+.section7 p{
+    font-family: aktiv-grotesk, sans-serif;
+    padding-top:10px 0;
+    font-size: 1.3rem;
+    margin-bottom: 100px;
+}
+.section7 h1, footer h1{
+    font-family: Walsheim, sans-serif;
+    text-align: center;
+    font-weight: 700 !important;
+    font-size: 2.625rem !important;
+    line-height: 1.25 !important;
+    padding: 2% 0;
+}
+.section7 div.center{
+    padding-bottom: 10rem;
+}
+footer .row{
+    margin-top: 8rem;;
+}
+footer a{
+    color:white;
+}
+footer .social{
+    margin-left:300px;
+}
+.social a{
+    padding:5px;
+}
+footer .left{
+    margin-left: 20px;
+}
