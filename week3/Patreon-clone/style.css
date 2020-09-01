@@ -21,11 +21,17 @@ a.btn-small.orange.darken-4.white-text.center-text{
     position: fixed;
     margin-top: 15px;
     right:6%;
-    font-size:12px !important;
+    width:10.6rem;
+    font-size:10px !important;
+}
+.top-right i.material-icons.right {
+    position: absolute;
+    right: 2%;
+    top: 2%;
 }
 .dropdown-content {
     top: 100% !important;
-  }
+}
 .back-im{
     background-image: url('https://c5.patreon.com/external/marketing/index_page/creativity_over_everything_d.png');
     background-size: contain;
