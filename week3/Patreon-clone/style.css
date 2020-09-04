@@ -93,7 +93,7 @@ col .s2 a{
     box-shadow: none;
 }
 .card-image.col.s4{
-    margin-left: 20%;
+    margin-left: 30%;
 }
 .card-textimg, .contactus-title{
 line-height: 1.25 !important;
@@ -139,27 +139,66 @@ line-height: 1.25 !important;
    margin-top:5%;
    margin-bottom:5%;
 }
-/* .section-forth */
-.btn-card{
-    position: absolute;
-    top: 50%;
-    left: 20%;
+.cont-flex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    row-gap:10px;
 }
-
-.btn-image{
+.cont-flex .col{
+    margin:5px;
+    flex: 1 1;
+    position:relative;
+    width:100%;
+}
+button{
     display:none;
-    border-radius: 50px;
-   /* margin-top: -180%; */
-    /* opacity: 0; */
+    border:none;
+    box-shadow:none;
+    border-radius: 50px; 
+    background-color: #afa8a8;
+    position:absolute;
+    top: 33%;
+    left: 25%;
+    padding: 10px 15px;
 }
-.section-third .card:hover .btn{
+button a{
+    color:#fff;
+}
+.section-third .card-title{
+    text-align: center;
+}
+.section-third .col:hover button{
     display: inline-block;
-    /* filter: opacity(0.7);*/
+} 
+.section-third h1{
+    margin: 2.8rem 0;
+    font-size: 2.625rem;
+    text-align:center;
+    line-height: 1.25;
+    font-family: Walsheim, sans-serif;
+    font-weight: 700;
 }
-@media (max-width: 1000px){
-.firstrow::after {
-    content: initial;
+/* media query for the image card */
+@media screen and (max-width: 479px){
+   .cont-flex .col{
+       flex-basis: 46%;
+   }
+    
 }
+@media screen and (min-width: 480px){
+
+   .cont-flex .col{
+       flex-basis: 30%;
+   }
+    
+}
+@media screen and (min-width: 768px){
+
+   .cont-flex .col{
+       flex-basis: 23%;
+   }
+    
 }
 
 .contact-cont{
