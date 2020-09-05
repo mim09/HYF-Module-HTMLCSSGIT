@@ -6,31 +6,159 @@ body{
 font-size:16px !important;
 margin:0;
 }
-.logo{
-    float:left;
-    margin-top:5px;
-}
-.nav-wrapper .btn-small{
-  border-radius: 40px;
-  max-width: 100%;
-}
-.nav-wrapper .left.hide-on-med-and-down{
-    width:600px;
-}
-a.btn-small.orange.darken-4.white-text.center-text{
+.cont-nav{
     position: fixed;
-    margin-top: 15px;
-    right:6%;
-    width:10.6rem;
-    font-size:10px !important;
+    width:100%;
+    z-index: 2;
 }
-.top-right i.material-icons.right {
+.navbar{
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.navbar .logo {
+    min-width: 40px;
+    width: 40px;
+    height: 48px;
+    margin-top: 2%;
+}
+.logo img{
+    width: 100%;
+}
+.autocomplete{
+    border:none;
+}
+input#autocomplete-input{
+    height:2rem;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), 
+input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), 
+input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), 
+input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), 
+input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), 
+input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), 
+textarea.materialize-textarea {
+    background-color: #e0e0e0;
+    border-radius: 40px;
+    outline: none;
+   width:90%;
+   padding-left: 35px;
+}
+::placeholder {
+    color: #000;
+}
+.autocomplete:focus {
+  outline: none;
+}
+.navbar a{
+   text-decoration: none; 
+   color:black;
+}
+.rightElement{
+    padding: 0;
+    margin-top: 2%;
+}
+ul li{
+    list-style-type: none;
+}
+.leftElement div{
+display:inline;
+}
+.leftElement{
+flex:  3 2;
+margin-top: 2%;
+padding: 10px 0;
+}
+.leftElement .navelement {
+    margin-right: 11px;
+}
+.rightElement{
+display:flex;
+justify-content: flex-end;
+box-sizing: border-box;
+}
+.navelement.search{
+    position:relative;
+    width: 30%;
+    margin-right: 40px;
+}
+i.fas.fa-search {
     position: absolute;
-    right: 2%;
-    top: 2%;
+    top: 20%;
+    left: 10px;
 }
-.dropdown-content {
-    top: 100% !important;
+.navelement.login a {
+    margin-left: 10px;
+    border-radius: 16px;
+    margin-right: 1rem;
+    min-width: 39px;
+}
+.drop-dcontent{
+    position: absolute;
+    display: none;
+    width:180px;
+    text-align: left;
+    padding-left: 8px !important;
+    overflow: hidden;
+    line-height: 2.2em;
+    margin-top: 10px;
+    background: #fff;
+}
+.drop-downcontent{
+    display:none;
+}
+a.fas.fa-bars {
+    display: none;
+}
+.drop-d:hover .drop-dcontent{
+    display:block;
+    transition-delay:3s;
+}
+.cont-flex button.drop-d:focus {
+    background: none;
+}
+.cont-flex button{
+    border: none;
+    background-color: #fff;
+}
+.btn-small{
+text-transform: none;
+padding: 0 6px;
+font-size: 0.9rem;
+min-width: fit-content !important;
+}
+.showcontent{
+    position: absolute;
+    display:block;
+    width:100%;
+    margin-left:2px;
+    margin-top: 2em;
+}
+.showcontent li{
+    position: relative;
+    margin-top: 1.2rem;
+    border-bottom: 1px solid rgb(229, 227, 221);
+    padding: 20px 5px;
+}
+.showcontent li:first-of-type {
+    border-top: 1px solid rgb(229, 227, 221);
+    margin-top: 30px;
+}
+.showcontent li i.fas.fa-chevron-down {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+button.dropdown-side.black-text, button.drop-d{
+    border: none;
+    background: none;
+}
+.showcontent #close{
+   position: absolute;
+   right:13px;
+   top:-2%;
 }
 .back-im{
     background-image: url('https://c5.patreon.com/external/marketing/index_page/creativity_over_everything_d.png');
@@ -56,9 +184,15 @@ a.btn-small.orange.darken-4.white-text.center-text{
 
 }
 .title-section1{
+    color: rgb(255, 255, 255);
+    font-family: Walsheim, sans-serif;
+    margin: 0px;
+    position: relative;
+    transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    text-align: left;
+    font-weight: 700 !important;
+    font-size: 2.625rem !important;
     line-height: 1.25 !important;
-    font-size: 3.5rem !important;
- font-family: Walsheim, sans-serif;
 }
 .parag{
     font-family: aktiv-grotesk, sans-serif;
@@ -151,7 +285,7 @@ line-height: 1.25 !important;
     position:relative;
     width:100%;
 }
-button{
+.cont-flex button{
     display:none;
     border:none;
     box-shadow:none;
@@ -162,7 +296,7 @@ button{
     left: 25%;
     padding: 10px 15px;
 }
-button a{
+.cont-flex button a{
     color:#fff;
 }
 .section-third .card-title{
@@ -178,6 +312,42 @@ button a{
     line-height: 1.25;
     font-family: Walsheim, sans-serif;
     font-weight: 700;
+}
+/* media queries */
+@media screen and (max-width:1023px){
+    .cont-nav{
+    height:100px;
+    }
+    div.leftElement{
+        display:none;
+    }
+    div.rightElement{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .navelement.search{
+        width:100%;
+        align-self: flex-start;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        margin: 0 1rem;
+    }
+    .navelement.login {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin-bottom: .5rem;
+    flex-shrink: 1 1;
+    }
+    a.fas.fa-bars {
+    display: inline;
+    font-size: 2rem;
+    align-self: center;
+    }
+    .fas.fa-bars:hover .drop-downcontent{
+    display: block;
+    }
 }
 /* media query for the image card */
 @media screen and (max-width: 479px){
@@ -198,6 +368,10 @@ button a{
    .cont-flex .col{
        flex-basis: 23%;
    }
+   .title-section1{
+    line-height: 1.25 !important;
+    font-size: 3.5rem !important;
+    }
     
 }
 
@@ -300,4 +474,7 @@ footer .social{
 }
 footer .left{
     margin-left: 20px;
+}
+.hidden{
+    display:none;
 }
