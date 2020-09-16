@@ -1,9 +1,10 @@
 html {
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Syne', sans-serif;
     text-size-adjust: 100%;
 }
 body{
-font-size:16px !important;
+font-size:16px;
 margin:0;
 }
 .cont-nav{
@@ -21,7 +22,7 @@ margin:0;
     min-width: 40px;
     width: 40px;
     height: 48px;
-    margin-top: 2%;
+    margin-top: 1.5em;
 }
 .logo img{
     width: 100%;
@@ -58,7 +59,7 @@ textarea.materialize-textarea {
 }
 .rightElement{
     padding: 0;
-    margin-top: 2%;
+    margin-top: 1.5em;
 }
 ul li{
     list-style-type: none;
@@ -68,11 +69,11 @@ display:inline;
 }
 .leftElement{
 flex:  3 2;
-margin-top: 2%;
-padding: 10px 0;
+margin-top:1.5em;
+padding: 0.3em 0; 
 }
 .leftElement .navelement {
-    margin-right: 11px;
+    margin-right: 0.688em;
 }
 .rightElement{
 display:flex;
@@ -82,7 +83,7 @@ box-sizing: border-box;
 .navelement.search{
     position:relative;
     width: 30%;
-    margin-right: 40px;
+    margin-right:2.5em;
 }
 i.fas.fa-search {
     position: absolute;
@@ -90,7 +91,7 @@ i.fas.fa-search {
     left: 10px;
 }
 .navelement.login a {
-    margin-left: 10px;
+    margin-left:0.6em;
     border-radius: 16px;
     margin-right: 1rem;
     min-width: 39px;
@@ -103,7 +104,7 @@ i.fas.fa-search {
     padding-left: 8px !important;
     overflow: hidden;
     line-height: 2.2em;
-    margin-top: 10px;
+    margin-top: 0.7em;
     background: #fff;
 }
 .drop-downcontent{
@@ -133,32 +134,32 @@ min-width: fit-content !important;
     position: absolute;
     display:block;
     width:100%;
-    margin-left:2px;
-    margin-top: 2em;
+    margin-left:0.2em;
+    margin-top: 1.5em;
 }
 .showcontent li{
     position: relative;
-    margin-top: 1.2rem;
+    margin-top: 1.2em;
     border-bottom: 1px solid rgb(229, 227, 221);
     padding: 20px 5px;
 }
 .showcontent li:first-of-type {
     border-top: 1px solid rgb(229, 227, 221);
-    margin-top: 30px;
+    margin-top: 2em;
 }
 .showcontent li i.fas.fa-chevron-down {
     position: absolute;
-    right: 20px;
-    top: 25px;
+    right: 1.25em;
+    top: 1.5em;
 }
 button.dropdown-side.black-text, button.drop-d{
     border: none;
     background: none;
+    padding: 0;
 }
 .showcontent #close{
    position: absolute;
-   right:13px;
-   top:-2%;
+   right:0.5em;
 }
 .back-im{
     background-image: url('https://c5.patreon.com/external/marketing/index_page/creativity_over_everything_d.png');
@@ -168,110 +169,95 @@ button.dropdown-side.black-text, button.drop-d{
     width:100%;
 }
 .cont-row{
-    margin: 80px auto !important; 
+    margin: 10em auto; 
 }
 
-.tit{
+.title-main{
     color: rgb(255, 255, 255);
     font-family: Walsheim, sans-serif;
-    margin: 0px;
+    margin: 0;
     position: relative;
     transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
     text-align: left;
-    font-weight: 700 !important;
-    font-size: 2.625rem !important;
-    line-height: 1.25 !important;
-
+    font-weight: 700;
+    font-size: 2.625rem;
+    line-height: 1.25;
 }
-.title-section1{
-    color: rgb(255, 255, 255);
-    font-family: Walsheim, sans-serif;
-    margin: 0px;
-    position: relative;
-    transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
-    text-align: left;
-    font-weight: 700 !important;
-    font-size: 2.625rem !important;
-    line-height: 1.25 !important;
-}
-.parag{
+.paragraph{
     font-family: aktiv-grotesk, sans-serif;
-    font-weight: 400 !important;
-    margin: 0.5rem 0rem !important;
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
+    font-weight: 400;
+    margin: 0.5em 0;
+    font-size: 1rem;
+    line-height: 1.5;
 }
-.parag2 strong{
-    font-weight: 700 !important;
+.paragraph2 strong{
+    font-weight: 700;
 }
 .btn-pateron{
-    margin-top: 10px;
+    margin-top: 0.6em;
     border-radius:40px;
     text-transform: none;
     width:12rem;
     height: 48px;
-    padding-top: 7px;
+    padding-top: 0.5em;
 }
 col .s2 a{
     margin-left:20px;
 }
 .photo-desc{
-    font-size: 2.125rem !important;
+    font-size: 2.125rem;
     font-family: Walsheim, sans-serif;
-    font-weight: 700 !important;
+    font-weight: 700;
 }
 .container.section-card {
-    margin: 8% 10%;
+   margin: 5em auto;
 }
 .card.horizontal.valign-wrapper, .section-card .card {
     box-shadow: none;
 }
-.card-image.col.s4{
-    margin-left: 30%;
-}
 .card-textimg, .contactus-title{
-line-height: 1.25 !important;
-font-size: 2.125rem !important;
-font-family: Walsheim, sans-serif;
-padding:0 0 0 15% !important;
-font-weight: 700 !important;
+line-height: 1.25;
+font-size: 2.26rem;
+font-family: noto sans, sans-serif;
+padding:0 0 0 15%;
+font-weight: 700;
 }
-.card-txtsmall{
+.card-txt-small{
 text-align: center;
-font-weight: 700 !important;
-font-size: 1.625rem !important;
-line-height: 1.25 !important;
+font-weight: 700;
+font-size: 1.625rem;
+line-height: 1.25;
 }
 .name-pic{
     font-family: aktiv-grotesk, sans-serif;
     margin: 0px;
-    font-weight: 700 !important;
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 .tit-pic{
     font-family: aktiv-grotesk, sans-serif;
-    margin: 0px;
-    font-weight: 400 !important;
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
 }
-.title-section2, .card-title{
-    font-family: Walsheim, sans-serif;
+.what-is-inner-title, .card-title{
+    font-family: noto sans, sans-serif;
     margin-top: 0;
-    font-weight: 700 !important;
-    font-size: 1.3125rem !important;
-    line-height: 1.25 !important;
+    font-weight: 700;
+    font-size: 1.3125rem;
+    line-height: 1.25;
 }
-.text-section2, .text-section4{
-    font-family: aktiv-grotesk, sans-serif;
-    font-weight: 400 !important;
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
+.what-is-inner-text, .text-contact-us{
+    font-family: syne, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
 }
-.section-third, .section-fifth {
-   margin-top:5%;
-   margin-bottom:5%;
+.who-uses, .my-community{
+   margin-top:2em;
+   margin-bottom:2em;
 }
 .cont-flex{
     display:flex;
@@ -280,7 +266,7 @@ line-height: 1.25 !important;
     row-gap:10px;
 }
 .cont-flex .col{
-    margin:5px;
+    margin:0.35em;
     flex: 1 1;
     position:relative;
     width:100%;
@@ -299,24 +285,37 @@ line-height: 1.25 !important;
 .cont-flex button a{
     color:#fff;
 }
-.section-third .card-title{
+.who-uses .card-title{
     text-align: center;
 }
-.section-third .col:hover button{
+.who-uses .col:hover button{
     display: inline-block;
 } 
-.section-third h1{
-    margin: 2.8rem 0;
+.who-uses h1{
+    margin: 1em 0;
     font-size: 2.625rem;
     text-align:center;
     line-height: 1.25;
     font-family: Walsheim, sans-serif;
     font-weight: 700;
 }
+.membership{
+	padding:2.8em 0;
+}
+.membership .center{
+    line-height: 1.25;
+    font-size: 2.8rem;
+    font-family: noto sans, sans-serif;
+	font-weight: 700;
+}
+.btn-membership{
+    border-radius: 40px;
+    text-transform: none;
+}
 /* media queries */
 @media screen and (max-width:1023px){
     .cont-nav{
-    height:100px;
+    height:112px;
     }
     div.leftElement{
         display:none;
@@ -329,15 +328,15 @@ line-height: 1.25 !important;
         width:100%;
         align-self: flex-start;
         position: absolute;
-        top: 4rem;
+        top: 4.3em;
         left: 0;
-        margin: 0 1rem;
+        margin: 0.15em 1em;
     }
     .navelement.login {
     display: flex;
     justify-content: flex-end;
     align-self: flex-end;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5em;
     flex-shrink: 1 1;
     }
     a.fas.fa-bars {
@@ -349,131 +348,154 @@ line-height: 1.25 !important;
     display: block;
     }
 }
+/* mediaquery for  */
+@media only screen and (max-width: 1023px) and (min-width: 923px) {
+	.my-community img{
+		width: 4.3em;
+	}
+}
 /* media query for the image card */
 @media screen and (max-width: 479px){
+	.btn-pateron{
+		width:100%;
+	}
    .cont-flex .col{
        flex-basis: 46%;
    }
-    
+   .card-image.col.s4{
+    margin-left: 6em;
+    }
+    .navelement.search{
+       width:90%;
+    }
+    .membership .center{
+    font-size: 1.8rem;
+    }  
 }
 @media screen and (min-width: 480px){
 
    .cont-flex .col{
        flex-basis: 30%;
    }
+   .card-image.col.s4{
+    margin-left: 10em;
+	}
+	.my-community-column-title, .my-community ul li{
+   	min-width:192px;
+	}
     
 }
 @media screen and (min-width: 768px){
-
    .cont-flex .col{
        flex-basis: 23%;
    }
-   .title-section1{
-    line-height: 1.25 !important;
-    font-size: 3.5rem !important;
+   .title-main{
+    line-height: 1.25;
+    font-size: 3.5rem;
+    }
+    .card .card-content {
+    padding-left:3em;
     }
     
 }
-
 .contact-cont{
-    padding:5rem !important;
+    padding:5rem ;
 }
 .contactus-title {
-    padding: 0 !important;
+    padding: 0;
 }
-p.text-section4, .section-fifth p{
+p.text-contact-us, .my-community p{
     text-align: center;
     justify-content: center;
 }
 .btn-contact{
-    margin-top: 20px;
+    margin-top: 1.2em;
     border-radius:40px;
     text-transform: none;
     width:10rem;
     height: 48px;
     padding-top: 7px;
 }
-.fifthcol-title{
+.my-community-column-title{
 margin-top: 0;
 margin-bottom: 0;
-font-weight: 700 !important;
-font-size: 1.625rem !important;
-line-height: 1.25 !important;
+font-weight: 700;
+font-size: 1.625rem;
+line-height: 1.25;
 }
 
-.section-fifth ul li{
-    margin-top:1rem;
+.my-community ul li{
+    margin-top:1em;
 }
-.secfifthcol{
+.rec-my-community-column{
     margin-left:0;
 }
-.section-fifth .row{
+.my-community .row{
     margin-top: 5%;
 }
-.section-fifth .col.s12.m6.l4{
+.my-community .col.s12.m6.l4{
    text-justify: auto;
    text-overflow: hide;
-   margin-top:1.5rem;
+   margin-top:1.5em;
 }
-.section5tit{
+.my-community .center{
         font-family: Walsheim, sans-serif;
         margin: 0px;
-        font-weight: 700 !important;
-        font-size: 2.625rem !important;
-        line-height: 1.25 !important;
+        font-weight: 700;
+        font-size: 2.625rem;
+        line-height: 1.25;
 }
-.section-fifth p{
+.my-community p{
     padding:0 15%;
 }
-.text-section6{
+
+.membership p{
     font-family: aktiv-grotesk, sans-serif;
-    font-weight: 400 !important;
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
     padding:0 15%;
     text-align: center;
 }
-.section7 .card-title{
+.resources .card-title{
     padding-top:20px;
 }
-.section7 .red-text{
+.resources .red-text{
     text-decoration:underline ;
 }
-.section7 .card{
-   box-shadow: none !important;
+.resources .card{
+   box-shadow: none;
    
 }
-.section7 p{
+.resources p{
     font-family: aktiv-grotesk, sans-serif;
     padding-top:10px 0;
     font-size: 1.3rem;
     margin-bottom: 100px;
 }
-.section7 h1, footer h1{
+.resources h1, footer h1{
     font-family: Walsheim, sans-serif;
     text-align: center;
-    font-weight: 700 !important;
-    font-size: 2.625rem !important;
-    line-height: 1.25 !important;
+    font-weight: 700;
+    font-size: 2.625rem;
+    line-height: 1.25;
     padding: 2% 0;
 }
-.section7 div.center{
+.resources div.center{
     padding-bottom: 10rem;
 }
 footer .row{
-    margin-top: 8rem;;
+    margin-top: 7.5em;;
 }
 footer a{
     color:white;
 }
-footer .social{
-    margin-left:300px;
-}
+
 .social a{
     padding:5px;
 }
 footer .left{
-    margin-left: 20px;
+    margin-left: 1.25em;
 }
 .hidden{
     display:none;
